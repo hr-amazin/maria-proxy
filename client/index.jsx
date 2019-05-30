@@ -1,52 +1,44 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 // import Description from './Description.jsx';
 // console.log('This is description', Description);
 
-class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      value: '',
-    }
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+const App = () => {
+  
+  const [id, setId] = useState(1001);
+
+
+  function handleChange(event) {
+    setId(parseInt(event.target.value));
   }
 
-
-  handleChange (event) {
-    this.setState({value: event.target.value});
-  }
-
-  handleSubmit (event) {
-    console.log(this.state.value);
+  function handleSubmit (event) {
+    console.log(id);
     event.preventDefault();
   }
 
-  render () {
-    // console.log(window.Description)
-    return (
+  return (
      <div>
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <label>
         Enter an id
-        <input type="text" value={this.state.value} onChange={this.handleChange}></input>
+        <input type="text" value={id} onChange={handleChange}></input>
         </label>
         <input type="submit" value="Submit"/>
       </form> 
      
       <div className="header">header and search</div>
-        <div className="body">
-          <div id="image" className="graph">Graph</div>
-          <div id="description" className="description"><Description /></div>
-          <div id="action" className="action">Action</div>
-        </div>
+      <div className="body">
+        <div id="image" className="graph" ><Images uuid={id}/></div>
+        <div id="description" className="description"><Description id={id}/></div>
+        <div id="action" className="action">Action</div>
+      </div>
        
-        <div id="carousel" className="carousel">Carousel</div>
-        <div id="footer" className="footer">Review and Ratings</div>
-      </div>    
-    )
-  }
+      <div id="carousel" className="carousel">Carousel</div>
+      <div id="footer" className="footer">Review and Ratings</div>
+    </div>    
+  )
+
 }
 
 ReactDOM.render(<App/>, document.getElementById('app'));

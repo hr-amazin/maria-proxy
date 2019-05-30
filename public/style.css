@@ -6,21 +6,14 @@ html, body{
     line-height: 1em;
 }
 
-.header {
+.action {
     text-align: center;
-    height: 100px;
-    background-color: white;
-    position: relative;
-    /* top: 0;
-    left: 0; */
-    z-index: 198;
-   
-    margin-bottom: 2px;
+    float: right;
     display: block;
-    zoom: 1;
-    min-width: 1000px;
-    border: 2px solid red;
-
+    margin: 5px;
+    height: 99%;
+    width: 15%;
+    border: 2px green solid;
 }
 
 .body {
@@ -42,6 +35,19 @@ html, body{
     background-color: white;
 }
 
+.col-1{
+    /* border: 1px solid purple; */
+    padding: 2px;
+}
+
+.description {
+    margin: 5px;
+    float: left;
+    /* display: inline-block; */
+    height: 99%;
+    width: 40%;
+}
+
 .footer {
     position: relative;
     margin-top: auto;
@@ -60,28 +66,50 @@ html, body{
     margin: 5px;
     height: 99%;
     width: 41%;
-    border: 2px green solid;
 }
 
-.description {
-    margin: 5px;
-    float: left;
-    /* display: inline-block; */
-  
-    height: 99%;
-    width: 40%;
-    border: 2px green solid;
-}
-
-.action {
+.header {
     text-align: center;
-    float: right;
+    height: 100px;
+    background-color: white;
+    position: relative;
+    /* top: 0;
+    left: 0; */
+    z-index: 198;
+   
+    margin-bottom: 2px;
     display: block;
-    margin: 5px;
-    height: 99%;
-    width: 15%;
-    border: 2px green solid;
+    zoom: 1;
+    min-width: 1000px;
+    border: 2px solid red;
+
 }
 
-img { max-height: 100%; max-width: 100%}
+img { 
+    max-height: 100%; 
+    max-width: 100%;
+}
 /*image jimmy*/
+
+/* #mainimg  */
+#mainimg:hover{
+    transform: scale(2);
+    
+}
+
+.thumbnail {
+  border-radius: 2px;
+  padding: 1px;
+  border: 1px solid #a2a6ac;
+  margin-bottom: 5px;   
+}
+
+.thumbnail:hover {
+    border: 1px solid orange;
+    margin-bottom: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 3px 2px rgba(228,121,17,.5);
+}
+
+
+
