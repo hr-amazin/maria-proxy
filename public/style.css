@@ -64,7 +64,6 @@ html, body{
 }
 
 .description {
-    text-align: center;
     margin: 5px;
     float: left;
     /* display: inline-block; */
