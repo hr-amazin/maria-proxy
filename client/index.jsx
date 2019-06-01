@@ -31,7 +31,7 @@ const App = () => {
       <div className="body">
         <div id="image" className="graph" ><Images uuid={id}/></div>
         <div id="description" className="description"><Description id={id}/></div>
-        <div id="action" className="action">Action</div>
+        <div id="action" className="action"><Action id={id}/></div>
       </div>
        
       <div id="carousel" className="carousel">Carousel</div>

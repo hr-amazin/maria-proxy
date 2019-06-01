@@ -7,13 +7,17 @@ html, body{
 }
 
 .action {
-    text-align: center;
+    text-align: left;
     float: right;
     display: block;
     margin: 5px;
-    height: 99%;
+    height: 307px;
     width: 15%;
-    border: 2px green solid;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left:10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 .body {
