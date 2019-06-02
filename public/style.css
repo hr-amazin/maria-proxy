@@ -26,6 +26,8 @@ html, body{
     height: 2000px;
     min-width : 1000px;
     background-color: white;
+    display: flex;
+    justify-content: space-around;
 }
 
 .carousel {

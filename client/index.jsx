@@ -34,7 +34,7 @@ const App = () => {
         <div id="action" className="action"><Action id={id}/></div>
       </div>
        
-      <div id="carousel" className="carousel">Carousel</div>
+      <div id="carousel" className="carousel"><Carousel uuid={id}/></div>
       <div id="footer" className="footer">Review and Ratings</div>
     </div>    
   )
